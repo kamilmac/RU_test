@@ -24,9 +24,9 @@ const StyledAddNoteArea = styled.div`
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 350px;
     height: 50;
-    background: hsl(0, 0%, 30%);
+    background: hsl(0, 0%, 20%);
 `
 
 class noteEdit extends Component {
@@ -59,7 +59,7 @@ class noteEdit extends Component {
                 <TransitionRise trigger={this.props.active}>
                     <TransitionZoom zoom={this.props.active ? 'in' : 'out'} origin="95% 95%">
                         <StyledContainer>
-                            <DelayRender delay={1000} props={{notes: this.props.notes}} component={<NoteList/>} />
+                            <DelayRender delay={1000} props={{notes: this.props.notes, height: '400px'}} component={<NoteList/>} />
                             <StyledAddNoteArea>
                                 <StyledInput
                                     placeholder="Add note here"
@@ -74,6 +74,7 @@ class noteEdit extends Component {
                                         color="hsl(163, 100%, 20%)"
                                         bgColor="hsl(0, 0%, 20%)"
                                         activeColor="hsl(163, 100%, 60%)"
+                                        fontSize={40}
                                         onClick={() => this.createNewNote(this.state.newNote)}
                                     >
                                         <SendIcon />

@@ -10,7 +10,7 @@ import DelayRender from './components/delayRender'
 
 const App = ({actions, ui, notes}) => (
     <StyledLayout>
-        <DelayRender delay={2000} props={{notes}} component={<NoteList/>} />
+        <DelayRender delay={2000} props={{notes, bgColor: "hsl(0, 0%, 95%)"}} component={<NoteList/>} />
         <NoteEdit
             active={ui.noteEditActive}
             notes={notes}
