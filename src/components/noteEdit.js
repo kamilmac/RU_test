@@ -59,7 +59,6 @@ class noteEdit extends Component {
                 <TransitionRise trigger={this.props.active}>
                     <TransitionZoom zoom={this.props.active ? 'in' : 'out'} origin="95% 95%">
                         <StyledContainer>
-
                             <DelayRender delay={1000} props={{notes: this.props.notes}} component={<NoteList/>} />
                             <StyledAddNoteArea>
                                 <StyledInput
@@ -73,6 +72,7 @@ class noteEdit extends Component {
                                     <StyledButton
                                         active={!!this.state.newNote.length}
                                         color="hsl(163, 100%, 20%)"
+                                        bgColor="hsl(0, 0%, 20%)"
                                         activeColor="hsl(163, 100%, 60%)"
                                         onClick={() => this.createNewNote(this.state.newNote)}
                                     >
@@ -80,7 +80,6 @@ class noteEdit extends Component {
                                     </StyledButton>
                                 </PositionAbsolute>
                             </StyledAddNoteArea>
-
                         </StyledContainer>
                     </TransitionZoom>
                 </TransitionRise>

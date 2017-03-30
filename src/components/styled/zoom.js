@@ -1,12 +1,12 @@
 import styled, { keyframes } from 'styled-components'
 
 const zoomIn = keyframes`
-    from {
+    0% {
         opacity: 0;
         transform: scale(0.5);
     }
 
-    to {
+    100% {
         opacity: 1;
         transform: scale(1);
     }
@@ -18,13 +18,9 @@ const zoomOut = keyframes`
         transform: scale(1);
     }
 
-    99% {
+    100% {
         opacity: 0;
         transform: scale(0);
-    }
-
-    100% {
-        display: none;
     }
 `
 

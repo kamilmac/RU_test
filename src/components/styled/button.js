@@ -4,7 +4,7 @@ export default styled.button`
     outline: none;
     border: none;
     fontSize: ${props => props.fontSize || 30};
-    background: none;
+    background: ${props => props.bgColor || 'none'};
     color: ${props => {
         if (props.active) {
             return props.activeColor

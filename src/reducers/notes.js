@@ -2,7 +2,13 @@ import { ADD_NOTE } from '../constants/actionTypes'
 
 const initialState = [
     {
-        text: 'Bye World',
+        text: 'Note #3',
+    },
+    {
+        text: 'Note #2',
+    },
+    {
+        text: 'Note #1',
     },
 ]
 
