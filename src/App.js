@@ -1,16 +1,16 @@
 import React, { PropTypes } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import StyledLayout from './components/styles/layout'
+import StyledLayout from './components/styled/layout'
 import NoteEdit from './components/noteEdit'
 import NoteList from './components/noteList'
-import Fab from './components/fab'
+import Fab from './components/floatingActionButton'
 import * as actions from './actions/all'
-import LateComponent from './components/lateComponent'
+import DelayRender from './components/delayRender'
 
 const App = ({actions, ui, notes}) => (
     <StyledLayout>
-        <LateComponent delay={2000} props={{notes}} component={<NoteList/>} />
+        <DelayRender delay={2000} props={{notes}} component={<NoteList/>} />
         <NoteEdit
             active={ui.noteEditActive}
             notes={notes}

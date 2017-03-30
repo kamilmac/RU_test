@@ -1,9 +1,21 @@
 import React, { PropTypes } from 'react'
+import styled from 'styled-components'
 
-const noteList = ({ notes = [] }) =>
+const StyledItem = styled.h2`
+    color: ${props => props.color || 'black'}
+`
+
+const noteList = ({ notes = [], textColor }) =>
     <div>
         {
-            notes.map((note, index) => <h1 key={index}>{note.text}</h1>)
+            notes.map((note, index) =>
+                <StyledItem
+                    key={index}
+                    textColor={textColor}
+                >
+                    {note.text}
+                </StyledItem>
+            )
         }
     </div>
 

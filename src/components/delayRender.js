@@ -1,11 +1,8 @@
 import React, { Component, PropTypes } from 'react'
 
-class lateComponent extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            props: this.props.props
-        }
+class delayRender extends Component {
+    state = {
+        props: this.props.props
     }
 
     componentWillReceiveProps(nextProps) {
@@ -15,13 +12,16 @@ class lateComponent extends Component {
     }
 
     render() {
-        return <div>{React.cloneElement(this.props.component, {...this.state.props})}</div>
+        return <div>
+            {React.cloneElement(this.props.component, {...this.state.props})}
+        </div>
     }
 }
 
-lateComponent.propTypes = {
+delayRender.propTypes = {
     delay: PropTypes.number.isRequired,
     props: PropTypes.object.isRequired,
+    component: PropTypes.element.isRequired,
 };
 
-export default lateComponent
+export default delayRender
