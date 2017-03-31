@@ -40,7 +40,7 @@ ShallowWrapper {
       "_calledComponentWillUnmount": false,
       "_compositeType": 2,
       "_context": Object {},
-      "_currentElement": <noteList
+      "_currentElement": <NoteList
         notes={
                 Array [
                         Object {
@@ -127,7 +127,7 @@ ShallowWrapper {
     "render": [Function],
   },
   "root": [Circular],
-  "unrendered": <noteList
+  "unrendered": <NoteList
     notes={
         Array [
             Object {

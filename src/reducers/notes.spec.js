@@ -1,5 +1,5 @@
 import notes from './notes'
-import * as types from '../constants/actionTypes'
+import * as types from '../constants/ActionTypes'
 
 describe('notes reducer', () => {
     it('should handle initial state', () => {
@@ -41,5 +41,4 @@ describe('notes reducer', () => {
             }
         ])
     })
-
 })

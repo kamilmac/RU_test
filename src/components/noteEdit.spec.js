@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import NoteEdit from './noteEdit'
+import NoteEdit from './NoteEdit'
 
 it('renders NoteList', () => {
     const props = {

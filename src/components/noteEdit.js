@@ -1,11 +1,11 @@
 import React, { Component, PropTypes } from 'react'
-import TransitionZoom from './styled/zoom'
-import TransitionRise from './styled/rise'
-import PositionAbsolute from './styled/positionAbsolute'
-import StyledInput from './styled/input'
-import StyledButton from './styled/button'
-import NoteList from './noteList'
-import DelayRender from './delayRender'
+import TransitionZoom from './styled/Zoom'
+import TransitionRise from './styled/Rise'
+import PositionAbsolute from './styled/PositionAbsolute'
+import StyledInput from './styled/Input'
+import StyledButton from './styled/Button'
+import NoteList from './NoteList'
+import DelayRender from './DelayRender'
 import SendIcon from 'react-icons/lib/fa/arrow-right'
 import styled from 'styled-components'
 
@@ -29,7 +29,7 @@ const StyledAddNoteArea = styled.div`
     background: hsl(0, 0%, 20%);
 `
 
-class noteEdit extends Component {
+class NoteEdit extends Component {
     state = {
         newNote: '',
         initiated: false,
@@ -89,10 +89,10 @@ class noteEdit extends Component {
     }
 }
 
-noteEdit.propTypes = {
+NoteEdit.propTypes = {
     active: PropTypes.bool.isRequired,
     notes: PropTypes.array.isRequired,
     onNewNote: PropTypes.func.isRequired,
 };
 
-export default noteEdit
+export default NoteEdit

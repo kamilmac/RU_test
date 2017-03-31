@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
-import PositionAbsolute from './styled/positionAbsolute'
-import TransitionRotate from './styled/rotate'
-import TransitionZoom from './styled/zoom'
+import PositionAbsolute from './styled/PositionAbsolute'
+import TransitionRotate from './styled/Rotate'
+import TransitionZoom from './styled/Zoom'
 import ChatIcon from 'react-icons/lib/md/chat-bubble'
 import CloseIcon from 'react-icons/lib/md/close'
 import styled from 'styled-components'
@@ -30,32 +30,29 @@ const StyledIcon = styled.span`
     line-height: ${props => props.size || 20}px;
 `
 
-const fab = ({active, onActivate, onDeactivate}) => {
-    return (
-        <StyledContainer onClick={() => active ? onDeactivate() : onActivate()}>
-            <TransitionZoom zoom={active ? 'out' : 'in'}>
-                <PositionAbsolute center>
-                    <StyledIcon>
-                        <ChatIcon />
-                    </StyledIcon>
-                </PositionAbsolute>
-            </TransitionZoom>
+const Fab = ({active, onActivate, onDeactivate}) =>
+    <StyledContainer onClick={() => active ? onDeactivate() : onActivate()}>
+        <TransitionZoom zoom={active ? 'out' : 'in'}>
+            <PositionAbsolute center>
+                <StyledIcon>
+                    <ChatIcon />
+                </StyledIcon>
+            </PositionAbsolute>
+        </TransitionZoom>
 
-            <TransitionRotate rotate={active ? 'in' : 'out'}>
-                <PositionAbsolute center>
-                    <StyledIcon>
-                        <CloseIcon />
-                    </StyledIcon>
-                </PositionAbsolute>
-            </TransitionRotate>
-        </StyledContainer>
-    )
-}
+        <TransitionRotate rotate={active ? 'in' : 'out'}>
+            <PositionAbsolute center>
+                <StyledIcon>
+                    <CloseIcon />
+                </StyledIcon>
+            </PositionAbsolute>
+        </TransitionRotate>
+    </StyledContainer>
 
-fab.propTypes = {
+Fab.propTypes = {
     active: PropTypes.bool.isRequired,
     onActivate: PropTypes.func.isRequired,
     onDeactivate: PropTypes.func.isRequired,
 }
 
-export default fab
+export default Fab

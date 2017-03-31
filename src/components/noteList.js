@@ -19,7 +19,7 @@ const StyledItem = styled.p`
     color: ${props => props.textColor || 'hsl(0, 0%, 30%)'};
 `
 
-const noteList = ({ notes = [], textColor, bgColor, height }) =>
+const NoteList = ({ notes = [], textColor, bgColor, height }) =>
     <StyledContainer height={height}>
         {
             notes.map((note, index) =>
@@ -34,8 +34,8 @@ const noteList = ({ notes = [], textColor, bgColor, height }) =>
         }
     </StyledContainer>
 
-noteList.propTypes = {
+NoteList.propTypes = {
     notes: PropTypes.array,
 };
 
-export default noteList
+export default NoteList

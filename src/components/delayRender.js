@@ -1,13 +1,15 @@
 import React, { Component, PropTypes } from 'react'
 
-class delayRender extends Component {
+class DelayRender extends Component {
     state = {
         props: this.props.props
     }
 
     componentWillReceiveProps(nextProps) {
         setTimeout(() => {
-            this.setState({ props: nextProps.props })
+            this.setState({
+                props: nextProps.props
+            })
         }, this.props.delay)
     }
 
@@ -18,10 +20,10 @@ class delayRender extends Component {
     }
 }
 
-delayRender.propTypes = {
+DelayRender.propTypes = {
     delay: PropTypes.number.isRequired,
     props: PropTypes.object.isRequired,
     component: PropTypes.element.isRequired,
 };
 
-export default delayRender
+export default DelayRender

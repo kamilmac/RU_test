@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Layout from './layout'
+import Layout from './Layout'
 
 it('should not throw an error when called', () => {
     <Layout />

@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Rotate from './rotate'
+import Rotate from './Rotate'
 
 it('should not throw an error when called', () => {
     <Rotate />

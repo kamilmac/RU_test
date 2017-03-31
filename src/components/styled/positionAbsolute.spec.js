@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import PositionAbsolute from './positionAbsolute'
+import PositionAbsolute from './PositionAbsolute'
 
 it('should not throw an error when called', () => {
     <PositionAbsolute />

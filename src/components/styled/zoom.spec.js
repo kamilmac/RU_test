@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Zoom from './zoom'
+import Zoom from './Zoom'
 
 it('should not throw an error when called', () => {
     <Zoom />

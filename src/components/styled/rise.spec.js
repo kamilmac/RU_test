@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Rise from './rise'
+import Rise from './Rise'
 
 it('should not throw an error when called', () => {
     <Rise />

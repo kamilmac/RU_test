@@ -1,5 +1,5 @@
 import ui from './ui'
-import * as types from '../constants/actionTypes'
+import * as types from '../constants/ActionTypes'
 
 describe('ui reducer', () => {
     it('should handle initial state', () => {
@@ -29,5 +29,4 @@ describe('ui reducer', () => {
             noteEditActive: false,
         })
     })
-
 })

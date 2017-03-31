@@ -1,10 +1,10 @@
-import { SHOW_NOTE_EDIT, HIDE_NOTE_EDIT } from '../constants/actionTypes'
+import { SHOW_NOTE_EDIT, HIDE_NOTE_EDIT } from '../constants/ActionTypes'
 
 const initialState = {
     noteEditActive: false,
 }
 
-export default function ui(state = initialState, action) {
+export default (state = initialState, action) => {
     switch (action.type) {
         case SHOW_NOTE_EDIT:
             return { ...state, noteEditActive: true }

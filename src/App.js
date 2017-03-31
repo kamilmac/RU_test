@@ -1,14 +1,14 @@
 import React, { PropTypes } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import StyledLayout from './components/styled/layout'
-import NoteEdit from './components/noteEdit'
-import NoteList from './components/noteList'
-import Fab from './components/floatingActionButton'
+import StyledLayout from './components/styled/Layout'
+import NoteEdit from './components/NoteEdit'
+import NoteList from './components/NoteList'
+import Fab from './components/FloatingActionButton'
 import * as actions from './actions/all'
-import DelayRender from './components/delayRender'
+import DelayRender from './components/DelayRender'
 
-const App = ({actions, ui, notes}) => (
+const App = ({actions, ui, notes}) =>
     <StyledLayout>
         <DelayRender delay={2000} props={{notes, bgColor: "hsl(0, 0%, 95%)"}} component={<NoteList/>} />
         <NoteEdit
@@ -22,7 +22,6 @@ const App = ({actions, ui, notes}) => (
             onDeactivate={actions.hideNoteEdit}
         />
     </StyledLayout>
-)
 
 App.propTypes = {
     actions: PropTypes.object.isRequired,

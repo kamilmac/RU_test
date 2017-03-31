@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import NoteList from './noteList'
+import NoteList from './NoteList'
 
 it('renders NoteList', () => {
     const notes = [

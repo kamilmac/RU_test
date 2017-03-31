@@ -1,4 +1,4 @@
-import { ADD_NOTE } from '../constants/actionTypes'
+import { ADD_NOTE } from '../constants/ActionTypes'
 
 const initialState = [
     {
@@ -12,7 +12,7 @@ const initialState = [
     },
 ]
 
-export default function notes(state = initialState, action) {
+export default (state = initialState, action) => {
     switch (action.type) {
         case ADD_NOTE:
             return [

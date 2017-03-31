@@ -56,7 +56,7 @@ ShallowWrapper {
       "_calledComponentWillUnmount": false,
       "_compositeType": 2,
       "_context": Object {},
-      "_currentElement": <fab
+      "_currentElement": <Fab
         active={true}
         onActivate={[Function]}
         onDeactivate={[Function]} />,
@@ -145,7 +145,7 @@ ShallowWrapper {
     "render": [Function],
   },
   "root": [Circular],
-  "unrendered": <fab
+  "unrendered": <Fab
     active={true}
     onActivate={[Function]}
     onDeactivate={[Function]} />,
