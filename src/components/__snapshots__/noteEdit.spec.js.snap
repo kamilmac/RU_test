@@ -20,6 +20,7 @@ ShallowWrapper {
                     delay={1000}
                     props={
                         Object {
+                            "height": "400px",
                             "notes": Array [
                               Object {
                                 "text": "test",
@@ -45,6 +46,7 @@ ShallowWrapper {
                             activeColor="hsl(163, 100%, 60%)"
                             bgColor="hsl(0, 0%, 20%)"
                             color="hsl(163, 100%, 20%)"
+                            fontSize={40}
                             onClick={[Function]}>
                             <FaArrowRight />
                         </styled.button>
@@ -69,6 +71,7 @@ ShallowWrapper {
                               delay={1000}
                               props={
                                     Object {
+                                          "height": "400px",
                                           "notes": Array [
                                             Object {
                                               "text": "test",
@@ -94,6 +97,7 @@ ShallowWrapper {
                                           activeColor="hsl(163, 100%, 60%)"
                                           bgColor="hsl(0, 0%, 20%)"
                                           color="hsl(163, 100%, 20%)"
+                                          fontSize={40}
                                           onClick={[Function]}>
                                           <FaArrowRight />
                                     </styled.button>
@@ -178,6 +182,7 @@ ShallowWrapper {
                                                   delay={1000}
                                                   props={
                                                             Object {
+                                                                      "height": "400px",
                                                                       "notes": Array [
                                                                         Object {
                                                                           "text": "test",
@@ -203,6 +208,7 @@ ShallowWrapper {
                                                                       activeColor="hsl(163, 100%, 60%)"
                                                                       bgColor="hsl(0, 0%, 20%)"
                                                                       color="hsl(163, 100%, 20%)"
+                                                                      fontSize={40}
                                                                       onClick={[Function]}>
                                                                       <FaArrowRight />
                                                             </styled.button>
@@ -227,6 +233,7 @@ ShallowWrapper {
                                                   delay={1000}
                                                   props={
                                                             Object {
+                                                                      "height": "400px",
                                                                       "notes": Array [
                                                                         Object {
                                                                           "text": "test",
@@ -252,6 +259,7 @@ ShallowWrapper {
                                                                       activeColor="hsl(163, 100%, 60%)"
                                                                       bgColor="hsl(0, 0%, 20%)"
                                                                       color="hsl(163, 100%, 20%)"
+                                                                      fontSize={40}
                                                                       onClick={[Function]}>
                                                                       <FaArrowRight />
                                                             </styled.button>

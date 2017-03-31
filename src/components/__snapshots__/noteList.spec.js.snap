@@ -6,27 +6,33 @@ ShallowWrapper {
     "findWhereUnwrapped": [Function],
   },
   "length": 1,
-  "node": <div>
-    <styled.h2
+  "node": <styled.div
+    height={undefined}>
+    <styled.p
+        bgColor={undefined}
         textColor="black">
         test
-    </styled.h2>
-    <styled.h2
+    </styled.p>
+    <styled.p
+        bgColor={undefined}
         textColor="black">
         test1
-    </styled.h2>
-</div>,
+    </styled.p>
+</styled.div>,
   "nodes": Array [
-    <div>
-      <styled.h2
+    <styled.div
+      height={undefined}>
+      <styled.p
+            bgColor={undefined}
             textColor="black">
             test
-      </styled.h2>
-      <styled.h2
+      </styled.p>
+      <styled.p
+            bgColor={undefined}
             textColor="black">
             test1
-      </styled.h2>
-</div>,
+      </styled.p>
+</styled.div>,
   ],
   "options": Object {},
   "renderer": ReactShallowRenderer {
@@ -83,29 +89,35 @@ ShallowWrapper {
       "_pendingReplaceState": false,
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <div>
-          <styled.h2
+        "_currentElement": <styled.div
+          height={undefined}>
+          <styled.p
+                    bgColor={undefined}
                     textColor="black">
                     test
-          </styled.h2>
-          <styled.h2
+          </styled.p>
+          <styled.p
+                    bgColor={undefined}
                     textColor="black">
                     test1
-          </styled.h2>
-</div>,
+          </styled.p>
+</styled.div>,
         "_debugID": 2,
-        "_renderedOutput": <div>
-          <styled.h2
+        "_renderedOutput": <styled.div
+          height={undefined}>
+          <styled.p
+                    bgColor={undefined}
                     textColor="black">
                     test
-          </styled.h2>
-          <styled.h2
+          </styled.p>
+          <styled.p
+                    bgColor={undefined}
                     textColor="black">
                     test1
-          </styled.h2>
-</div>,
+          </styled.p>
+</styled.div>,
       },
-      "_renderedNodeType": 0,
+      "_renderedNodeType": 1,
       "_rootNodeID": 0,
       "_topLevelWrapper": null,
       "_updateBatchNumber": null,

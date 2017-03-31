@@ -15,6 +15,7 @@ const StyledItem = styled.p`
     border-radius: 10px;
     max-width: 500px;
     font-size: 16px;
+    overflow: hidden;
     color: ${props => props.textColor || 'hsl(0, 0%, 30%)'};
 `
 
